@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kampus;
+use Illuminate\Suppport\Facades\DB;
 
 class KampusController extends Controller
 {
@@ -40,7 +41,7 @@ class KampusController extends Controller
 
     public function delete($id){
         $kampus = Kampus::find($id);
-        $kampus->delete;
+        $kampus->delete();
 
         return "delete berhasil";
     }

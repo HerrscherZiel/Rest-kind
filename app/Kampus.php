@@ -11,7 +11,7 @@ class Kampus extends Model
     //primary key
     protected $primaryKey = 'id';
     //disable create_at and update_at
-    public $timestamps = true;
+    public $timestamps = false;
     protected $fillable = [
         'id',
         'Fakultas',
